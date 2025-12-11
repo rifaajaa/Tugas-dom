@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar-dom</title>
+</head>
+<body>
+
+    <h1 id="judul">belajar-dom</h1>
+    
+
+    <h1 id="akew">Halo semuaaa</h1>
+
+    <button onclick="ubah()">klik disini</button>
+    
+    <!-- Input warna -->
+    <input type="color" id="picker">
+
+    <script>
+        document.getElementById("judul").innerHTML = "Hallo, mahasiswa!";
+        document.getElementById("judul").style.color = "skyblue";
+
+        function ubah(){
+            let warna = document.getElementById("picker").value; // ambil warna input
+            const teks = document.getElementById("akew");
+
+            teks.innerText = "yeayy teks nya berubahh";
+            teks.style.color = warna; // warna berubah sesuai input
+            teks.style.backgroundColor = "blue";
+        }
+    </script>
+
+</body>
+</html>
